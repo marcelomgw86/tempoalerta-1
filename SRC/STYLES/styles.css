@@ -223,6 +223,18 @@ body {
     font-weight: bold;
 }
 
+.inpe-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #fc5c12;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 .alert-link:hover {
     background-color: #c9302c;
 }
