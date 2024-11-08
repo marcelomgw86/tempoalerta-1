@@ -26,6 +26,10 @@ body {
     margin: 0 5;
 }
 
+#forecast-container {
+    background-color: #051c5ce0;
+    border-radius: 10px;
+}    
 #search {
     display: flex;
     align-items: center;
@@ -71,87 +75,52 @@ body {
 }
 
 #temp {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 20px;
-    background: linear-gradient(90deg, #8ac0f7,#8ac0f7);
-    color: #ffffff;
-    border-radius: 20px;
-    padding: 20px;
-    
+    display: flex; /* Usando flexbox para alinhar itens em linha */
+    justify-content: space-between; /* Espaça os itens entre a esquerda e a direita */
+    align-items: flex-start; /* Alinha os itens no topo */
+    width: 100%;
+    gap: 0px; /* Reduz o espaço entre o left e o right (ajuste o valor conforme necessário) */
 }
 
-#temp_img{
-    filter:drop-shadow(2px 2px 2px rgba(0,0,0,0.2))
+#left {
+    display: block; /* Itens dentro do left ficam empilhados verticalmente */
+    text-align: center; /* Centraliza o conteúdo do lado esquerdo */
+    margin-left: 10px;
 }
 
-#temp_value{
+#right {
+    display: block; /* Itens dentro do right ficam empilhados verticalmente */
+    text-align: left; /* Alinha o conteúdo à esquerda */
+    margin-right: 10px;
+}
+
+
+#temp_img {
+    width: 100px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto; /* Manter a proporção da imagem */
+    margin-bottom: 1px; /* Espaçamento abaixo da imagem */
+}
+
+#temp_value {
+    font-size: 2em; /* Ajuste o tamanho da temperatura */
     font-weight: bold;
-    font-size: 30px;
-    line-height: 55px;
+    color: #ffffff; /* Cor da temperatura */
+    margin-bottom: 10px; /* Espaçamento abaixo da temperatura */
+    margin-top: 20px;
 }
 
 #temp_description {
-    font-weight: 500;
-    text-transform: capitalize;
-    font-size: 10px;
+    margin-top: 1px; /* Espaçamento entre a imagem e a descrição */
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-weight: 550;
+    color: #fffefe; /* Cor do texto da descrição */
 }
 
-#other_infos {
-    margin-top: 30px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
 
-}
+   
 
-#other_infos .info{
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    padding: 4px 10px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
-    background-color: #fff;
-    gap: 10px;
 
-}
-
-#other_infos .info h2 {
-    font-size: 12px;
-    font-weight: 600;
-
-}
-
-#other_infos .info i {
-    text-align: center;
-    font-size: 20px;
-    width: 20px;
-
-}
-
-#temp_max_icon {
-    color: #7f1d1d;
-
-}
-
-#temp_min_icon {
-    color: #0284c7;
-
-    
-}
-
-#humidity_icon {
-    color: #0ea5e9;
-
-    
-}
-
-#wind_icon {
-    color: #7c3aed;
-    
-}
 
 #alert img {
     display: flex;
@@ -181,7 +150,7 @@ body {
     text-align: center;
     margin-top: 20px;
     color: #ffffff;
-    background-color: #606dde;
+    background-color: #e6a00b;
     padding: 10px;
     border-radius: 5px;
     text-decoration: none;
@@ -242,21 +211,6 @@ body {
 }
 
 
-#current-day-forecast {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-#current-day-forecast h3 {
-    text-align: center;
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 15px;
-}
-
 .alert-link {
     display: block;
     text-align: center;
@@ -272,4 +226,24 @@ body {
 .alert-link:hover {
     background-color: #c9302c;
 }
+
+#additional-info {
+    margin-top: 10px; /* Ajuste conforme necessário */
+    margin-bottom: 0px;
+    font-size: 0.9em; /* Para manter o texto um pouco menor que a temperatura */
+    color: #ffffff; /* Cor mais discreta, se desejar */
+    font-weight: 550;
+}
+
+#additional-info p {
+    display: flex;
+    align-items: center;
+    margin: 5px 0; /* Ajuste o espaçamento vertical */
+}
+
+#additional-info i {
+    margin-right: 5px; /* Espaçamento entre o ícone e o valor */
+    color: #fff9f9; /* Cor mais discreta para os ícones, se desejar */
+    font-size: 19px; /* Ajuste o tamanho do ícone (aumente o valor conforme necessário) */
+}    
 
