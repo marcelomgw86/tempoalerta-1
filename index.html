@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="SRC/STYLES/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <title>Clima Atual</title>
+    <title>#FORÇARS</title>
 </head>
 <body>
     <div id="container">
@@ -16,7 +16,7 @@
         
         <form id="search">
             <i class="fa-solid fa-location-dot"></i>
-            <input type="search" name="city_name" id="city_name" placeholder="Digite a cidade">
+            <input type="search" name="city_name" id="city_name" placeholder="Digite outra cidade">
             <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
 
@@ -36,7 +36,7 @@
                         <!-- Exibição de ícones para umidade e vento -->
                         <div id="additional-info">
                             <p><i class="fa-solid fa-droplet"></i> <span id="humidity"></span></p> <!-- Ícone de umidade -->
-                            <p><i class="fa-solid fa-wind"></i> <span id="wind"></span></p>        <!-- Ícone de vento -->
+                            <p><i class="fa-solid fa-wind"></i> <span id="wind"></span></p> <!-- Ícone de vento -->
                         </div>
                     </div>
                 </div>             
@@ -44,11 +44,10 @@
             </div>
         </div>
 
-        <!-- Botões de navegação -->
-        <a href="forecast.html" class="forecast-link">Próximos dias</a>
-        <a href="https://nivelguaiba.com.br/" class="inpe-link" target="_blank">Nível do Guaíba</a>
-        <a href="https://alertas2.inmet.gov.br/" class="alert-link" target="_blank">Alertas do INMET</a>
-        
+        <!-- Botões de navegação com ícones -->
+        <a href="forecast.html" class="forecast-link"><i class="fa-solid fa-calendar-alt"></i> Próximos dias</a>
+        <a href="https://nivelguaiba.com/" class="inpe-link" target="_blank"><i class="fa-solid fa-water"></i> Nível do Guaíba</a>
+        <a href="https://alertas2.inmet.gov.br/" class="alert-link" target="_blank"><i class="fa-solid fa-exclamation-triangle"></i> Alertas do INMET</a>
 
         <div id="alert"></div>
     </div>
