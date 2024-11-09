@@ -150,7 +150,7 @@ body {
     text-align: center;
     margin-top: 20px;
     color: #ffffff;
-    background-color: #e6a00b;
+    background-color: #051c5ce0;
     padding: 10px;
     border-radius: 5px;
     text-decoration: none;
@@ -223,12 +223,24 @@ body {
     font-weight: bold;
 }
 
+.clima-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #027215;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 .inpe-link {
     display: block;
     text-align: center;
     margin-top: 20px;
     color: #ffffff;
-    background-color: #fc5c12;
+    background-color: #edc202;
     padding: 10px;
     border-radius: 5px;
     text-decoration: none;
@@ -261,6 +273,7 @@ body {
 
 .forecast-link i,
 .inpe-link i,
-.alert-link i {
+.alert-link i,
+.clima-link i {
     margin-right: 8px; /* Ajuste o valor se quiser mais ou menos espaço */
 }
