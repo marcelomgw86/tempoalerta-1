@@ -259,3 +259,8 @@ body {
     font-size: 19px; /* Ajuste o tamanho do ícone (aumente o valor conforme necessário) */
 }    
 
+.forecast-link i,
+.inpe-link i,
+.alert-link i {
+    margin-right: 8px; /* Ajuste o valor se quiser mais ou menos espaço */
+}
