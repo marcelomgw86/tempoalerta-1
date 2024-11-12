@@ -3,13 +3,13 @@
   "short_name": "Tempo",
   "icons": [
     {
-      "src": "/https://marcelomg20.github.io/tempoalerta/my-favicon/favicon.ico /my-favicon/web-app-manifest-192x192.png",
+      "src": "/https://marcelomg20.github.io/tempoalerta/my-favicon/web-app-manifest-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "/https://marcelomg20.github.io/tempoalerta/my-favicon/favicon.ico /my-favicon/web-app-manifest-512x512.png",
+      "src": "/https://marcelomg20.github.io/tempoalerta/my-favicon/web-app-manifest-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
